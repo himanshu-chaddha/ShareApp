@@ -25,30 +25,31 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="aboutUs()">About Us</a>
+        <a class="nav-link" [routerLink]="['/about-us']">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="termsAndConditions()"
+        <a class="nav-link" [routerLink]="['/terms-and-conditions']"
           >Terms And Conditions</a
         >
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-          >Disabled</a
-        >
-      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input
-        class="form-control mr-sm-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Search
+    <div style="padding-right: 0.5rem; ">
+      <button
+        class="btn btn-outline-secondary my-2 my-sm-0"
+        [routerLink]="['/register']"
+        type="submit"
+      >
+        Register
       </button>
-    </form>
+    </div>
+    <div>
+      <button
+        class="btn btn-outline-secondary my-2 my-sm-0"
+        [routerLink]="['/login']"
+        type="submit"
+      >
+        Login
+      </button>
+    </div>
   </div>
 </nav>
