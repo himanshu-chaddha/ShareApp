@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
+
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
-
 @Component({
   selector: "app-register",
   templateUrl: "./register.component.html",
@@ -17,10 +17,9 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.registerForm = new FormGroup({
-      userName: new FormGroup({
-        firstname: new FormControl(null, [Validators.required]),
-        lastname: new FormControl(null)
-      }),
+      firstname: new FormControl(null, [Validators.required]),
+      lastname: new FormControl(null),
+
       email: new FormControl(null),
       dob: new FormControl(null),
       profilePic: new FormControl(null)

@@ -10,4 +10,8 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {}
+  aboutUs() {
+    console.log("About clicked");
+    this.router.navigate(["about-us"]);
+  }
 }

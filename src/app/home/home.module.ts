@@ -3,34 +3,21 @@ import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from "@angular/forms";
 
 import { HomeRoutingModule } from "./home-routing.module";
-import { LoginModule } from "./login/login.module";
+
 import { AdminModule } from "../admin/admin.module";
+import { SharedComponentsModule } from "../shared-components/shared-components.module";
 import { HomeComponent } from "./home/home.component";
-import { HeaderComponent } from "./home/header/header.component";
-import { FooterComponent } from "./home/footer/footer.component";
 import { HomeContentComponent } from "./home/home-content/home-content.component";
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeContentComponent
-  ],
+  declarations: [HomeComponent, HomeContentComponent],
   imports: [
     CommonModule,
-
     ReactiveFormsModule,
+    SharedComponentsModule,
     HomeRoutingModule,
-    AdminModule,
-    LoginModule
+    AdminModule
   ],
-  exports: [
-    ReactiveFormsModule,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeContentComponent
-  ]
+  exports: [ReactiveFormsModule, HomeComponent, HomeContentComponent]
 })
 export class HomeModule {}

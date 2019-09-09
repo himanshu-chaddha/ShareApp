@@ -7,7 +7,8 @@ import { AppComponent } from "./app.component";
 import { AdminModule } from "./admin/admin.module";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { HomeModule } from "./home/home.module";
-import { LoginModule } from "./home/login/login.module";
+import { SharedComponentsModule } from "./shared-components/shared-components.module";
+import { AuthModule } from "./auth/auth.module";
 import { ShareModule } from "./share/share.module";
 import { UsersModule } from "./users/users.module";
 
@@ -18,8 +19,9 @@ import { UsersModule } from "./users/users.module";
     AdminModule,
     DashboardModule,
     HomeModule,
-    LoginModule,
+    SharedComponentsModule,
     ShareModule,
+    AuthModule,
     UsersModule,
     AppRoutingModule,
     ReactiveFormsModule

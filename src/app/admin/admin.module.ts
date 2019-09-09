@@ -2,6 +2,8 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 import { AdminRoutingModule } from "./admin-routing.module";
+import { SharedComponentsModule } from "../shared-components/shared-components.module";
+
 import { BlockUnblockUserComponent } from "./block-unblock-user/block-unblock-user.component";
 import { UsersComponent } from "./users/users.component";
 import { UserStatisticsComponent } from "./user-statistics/user-statistics.component";
@@ -20,7 +22,7 @@ import { UserListComponent } from "./users/user-list/user-list.component";
     TermsAndConditionsComponent,
     UserListComponent
   ],
-  imports: [CommonModule, AdminRoutingModule],
+  imports: [CommonModule, SharedComponentsModule, AdminRoutingModule],
   exports: [
     BlockUnblockUserComponent,
     UserStatisticsComponent,

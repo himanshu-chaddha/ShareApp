@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { FormGroup, Validators, FormControl } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
@@ -21,5 +21,6 @@ export class LoginComponent implements OnInit {
   onLogin() {
     console.log("SomeOne Logged In");
     this.router.navigate(["/dashboard"]);
+    console.log(this.loginForm);
   }
 }
